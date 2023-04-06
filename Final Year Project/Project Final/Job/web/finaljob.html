@@ -1,0 +1,144 @@
+<html>
+<head><title>Search Job</title>
+<style type="text/css">
+input[type=submit] {
+        background-color: #0041C2;
+		width:10%;
+        border-style: outset;
+		border-color:silver;
+        color: #fff;
+        padding: 7px 7px;
+        text-decoration: inherit;
+        margin: 2px 2px;
+        cursor: pointer;
+		 }
+   h1{
+  font-family: Calibri; 
+  font-size: 20pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:#dc143c;
+  text-align: center; 
+  text-decoration: italic
+}
+select {
+background-image:url(../images/arrow.png);
+background-repeat:no-repeat;
+background-position:200px;
+width:353px;
+padding:12px;
+margin-top:4px;
+font-family:Times New Roman;
+line-height:1;
+border-radius:1px;
+background-color:#B2BEB5;
+color:  #7B3F00;
+font-size:15px;
+-webkit-appearance:values;
+
+border-style:inset;
+
+}
+</style>
+<div align="center">
+<h1><font face="Times New Roman">Search your dream job now!!!</h1></font></div>
+<body>
+
+<form action="finaljob.jsp" method="get"> 
+  <select name="jobtitle" id="jobtitle" style="width: 25%;height: 40px;" >
+  <option value="select">--Select Job Role--</option>
+  <option value="Software Developer">Software Developer</option>
+   <option value="Software Testing">Software Testing Associate</option>
+  <option value="Marketing">Marketing Analyst</option>
+  
+  <option value="Web designing">Web designing</option>
+ 
+  
+  <option value="IT Hardware Engineer">IT Hardware Engineer</option>
+  <option value="Finops Developer">Finops Developer</option>
+  
+  <option value="Architecture">Junior Architect</option>
+  
+  <option value="Medical Coder">Medical Coder</option>
+  <option value="Medical Electronics">Medical Electronics
+</option>
+  <option value="Fashion Designing">Fashion Designing</option></select>
+ 
+  
+  
+  <select name="course" id="course" style="width: 24%;height: 40px;">
+  <option value="select">--Select Course--</option>
+  <option value="B.E/B.TECH">B.E/B.TECH</option>
+  <option value="ME/M.TECH">ME/M.TECH</option>
+  <option value="MBA/PGDM">MBA</option>
+  <option value="MCA">MCA</option>
+  
+  <option value="B.Arch">B.Arch</option>
+   <option value="M.Arch">M.Arch</option>
+  <option value="B.Com">B.Com</option>
+   <option value="M.Com">M.Com</option>
+  <option value="B.FashionTech">B.FashionTech</option>
+  <option value="MBBS">MBBS</option>
+ 
+ 
+  <option value="M.Pharm">M.Pharm</option></select>
+  
+  <select name="location" id="industry" style="width: 25%;height: 40px;">
+  <option value="select">--Select Location--</option>
+  <option value="Banglore">Banglore</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Delhi">Delhi</option>
+  <h4><font face="Pune">Pune</h4>
+  <option value="Nagpur">Nagpur</option>
+  <option value="Kolkata">Kolkata</option>
+  <option value="Lucknow">Lucknow</option>
+  <option value="Coimbatore">Coimbatore</option></select>
+  
+  <select name="salary" id="salary" style="width: 25%;height: 40px;">
+  <option value="select">--Select Salary Range--</option>
+  <option value="10,000-20,000">10,000-20,000</option>
+  <option value="20,000-30,000">20,000-30,000</option>
+  <option value="30,000-40,000">30,000-40,000</option>
+  <option value="40,000-50,000">40,000-50,000</option>
+  <option value="50,000-60,000">50,000-60,000</option>
+  <h4><font face="60,000-70,000">60,000-70,000</h4>
+  <option value="70,000-80,000">70,000-80,000</option>
+  <option value="80,000-90,000">80,000-90,000</option>
+  <option value="90,000-1,00,000">90,000-1,00,000</option></select>
+  <br>
+  <table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'> 
+  <tr>
+    <td align='center'><font face="Times New Roman">Job Description</td>
+    <td><textarea name="jobdes" rows="4" cols="30" maxlength="500"/required></textarea> </td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Company Name</td> 
+    <td><input type='text' name='comname'  ></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Skills </td> 
+    <td><textarea name="skills" rows="4" cols="30" maxlength="500"/required></textarea></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Experience</td> 
+    <td><input type='text' name='exp'  ></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Interview Rounds </td> 
+    <td><textarea name="inter" rows="4" cols="30" maxlength="500"/required></textarea></td>
+</tr>
+<select name="work" id="industry" style="width: 25%;height: 40px;">
+  <option value="select">--Select Work type--</option>
+  <option value="Work from Office">Work from office</option>
+<option value="Work from Home">Work from home</option></select>
+  <div align="center">
+  <input type="submit" value="Search"></input></div>
+</form>
+</body>
+</html>

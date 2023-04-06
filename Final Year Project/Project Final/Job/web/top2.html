@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Enter educational details</title>
+
+</head>
+<style>
+ h3{
+  font-family: Calibri; 
+  font-size: 20pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:SlateBlue;
+  text-align: center; 
+  text-decoration: italic
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  background-color: #FFE5B4; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}</style>
+<body>
+<form action="top2.jsp" method="post">
+<h3>ACADEMIC QUALIFICATION</h3>
+
+ 
+<table align="center" cellpadding = "10">
+ 
+
+ 
+<!----- Qualification---------------------------------------------------------->
+<tr>
+<td>QUALIFICATION <br /><br /><br /><br /><br /><br /><br /></td>
+ 
+<td>
+<table>
+ 
+<tr>
+<td align="center"><b>Sl.No.</b></td>
+<td align="center"><b>Course</b></td>
+<td align="center"><b>Instituition</b></td>
+<td align="center"><b>Board</b></td>
+<td align="center"><b>Percentage</b></td>
+<td align="center"><b>Year of Passing</b></td>
+</tr>
+ 
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="ClassX_Instituition" maxlength="50" /required></td>
+<td><input type="text" name="ClassX_Board" maxlength="30" /required></td>
+<td><input type="text" name="ClassX_Percentage" maxlength="30" /required></td>
+<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /required></td>
+</tr>
+ 
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="ClassXII_Instituition" maxlength="50" /required></td>
+<td><input type="text" name="ClassXII_Board" maxlength="30" /required></td>
+<td><input type="text" name="ClassXII_Percentage" maxlength="30" /required></td>
+<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /required></td>
+</tr>
+ 
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="Graduation_Instituition" maxlength="50" /required></td>
+<td><input type="text" name="Graduation_Board" maxlength="30" /required></td>
+<td><input type="text" name="Graduation_Percentage" maxlength="30" /required></td>
+<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /required></td>
+</tr>
+ 
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="Masters_Instituition" maxlength="50" /></td>
+<td><input type="text" name="Masters_Board" maxlength="30" /></td>
+<td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+<td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
+</tr>
+ 
+<tr>
+<td></td>
+<td></td>
+<td align="center">(Instituition name)</td>
+<td align="center">(10 char max)</td>
+<td align="center">(upto 2 decimal)</td>
+</tr>
+</table>
+ 
+</td>
+</tr>
+ 
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Next">
+
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>

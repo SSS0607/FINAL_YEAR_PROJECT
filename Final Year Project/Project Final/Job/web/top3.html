@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Post your Resume</title>
+
+</head>
+ <style>
+ h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:Slateblue;
+  text-align: center; 
+ 
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+   
+  background-color: #FFE5B4; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
+ </style>
+ <h3>TECHNICAL DETAILS</h3>
+<body>
+<form action="top3.jsp" method="post">
+ <div align="center">
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>TECHNICAL SKILLS</td>
+<td><textarea name="Address" rows="4" cols="30" placeholder="Enter your technical skills here..." /required></textarea></td>
+
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>EXPERIENCE</td>
+<td>
+1 <input type="radio" name="exp" value="1" />
+2<input type="radio" name="exp" value="2" />
+3 or more<input type="radio" name="exp" value="3" />
+</td>
+</tr>
+ 
+
+<tr>
+<td>PROJECTS DONE</td>
+<td><textarea name="project" rows="4" cols="30" placeholder="Enter your project details here..." /required></textarea></td>
+
+</td>
+</tr>
+ 
+
+<!----- Hobbies ---------------------------------------------------------->
+ 
+<tr>
+<td>LANGUAGES KNOWN <br /><br /><br /></td>
+ 
+<td>
+Tamil
+<input type="checkbox" name="language1" value="Tamil" />
+English
+<input type="checkbox" name="language2" value="English" />
+Hindi
+<input type="checkbox" name="language3" value="Hindi" />
+
+
+<tr>
+<td>HOBBIES </td>
+ 
+<td>
+<input type="text" name="OtherHobby" maxlength="100" placeholder="Enter your hobbies here..." /required>
+</td>
+</tr>
+<tr>
+<td>Enter the Job you have applied for(Conformation)</td>
+ 
+<td>
+<input type="text" name="topjob" maxlength="100" placeholder="Enter your job name here..." /required>
+</td>
+</tr>
+ 
+
+ 
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>

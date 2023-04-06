@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+text-align:center;
+}
+#header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100px; 
+			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+		
+		#logo {
+			padding:10px;
+			float:center;
+		}
+                input[type=submit]
+       {
+        background-color: #0041C2;
+		width:25%;
+        border-style: outset;
+		border-color:silver;
+        color: #fff;
+        padding: 7px 7px;
+        text-decoration: inherit;
+        margin: 2px 2px;
+        cursor: pointer;
+		
+      }
+</style>
+</head>
+<body>
+<div align="center">
+		<header id="header">
+			<div id="logo">
+			
+				<h1><font face="Times New Roman">Skill and Job Recommendation using FoDRA Algorithm</h1>
+			</div></header>
+			</div><br><br><br><br>
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<center><tr>
+<div align="center"> 
+   <td><h1><font face="Times New Roman" color="orange" size="5">RECRUITER/EMPLOYER REGISTRATION PANEL</font></h1></td>
+</div></tr><center>
+<form action="admin.jsp" method="get">
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+    <td align='center'><font face="Times New Roman">First Name</td>
+    <td><input type='text' name='firstname' placeholder=" enter first name..." required></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Last Name</td> 
+    <td><input type='text' name='lastname'  placeholder="Enter last name..."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Password</td>
+    <td><input type='password' name='createpassword' placeholder="enter password..."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Confirm Password</td>
+    <td><input type='password' name='confirmpassword' placeholder=" confirm password..."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Company Name</td>
+    <td><input type='text' name='companyname' size=20 rows="3" placeholder="enter company name...">  </td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Select Industry</td>
+    <td><select name="industry" id="industry" placeholder="--Select State--">
+  <option value="select">--Select--</option>
+  <option value="IT INDUSTRY/NETWORKING">IT INDUSTRY/NETWORKING</option>
+  <option value="ACCOUNTING/FINANCE">ACCOUNTING/FINANCE</option>
+  <option value="TEXTILE/FASHION">TEXTILE/FASHION</option>
+  <option value="AGRICULTURE/DIARY">AGRICULTURE/DIARY</option>
+  <option value="HOTEL/RESTAURENT">HOTEL/RESTAURENT</option>
+  <option value="AUTOMOBILE/AUTO COMPONENTS">AUTOMOBILE/AUTO COMPONENTS</option>
+  <option value="CONSTRUCTION/CEMENTS">CONSTRUCTION/CEMENTS</option>
+  <option value="CHEMICAL/PETROCHEMICAL">CHEMICAL/PETROCHEMICAL</option>
+  <option value="CONSUMER GOODS/DURABLES">CONSUMER GOODS/DURABLES</option>
+  <option value="BPO/CALL CENTRE">BPO/CALL CENTRE</option>
+  <option value="MEDICAL/HEALTHCARE">MEDICAL/HEALTHCARE</option>
+  <option value="INSURANCE">INSURANCE</option></select>
+  </td>
+    
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Type of Company</td>
+    <td><input type="radio" id="type" name="type" value="private" required><font face="Times New Roman">Private</font> 
+<input type="radio" id="type" name="type" value="public" required><font face="Times New Roman">Public</font></div></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Designation</td>
+    <td><input type='text' name='designation' height=10 placeholder="enter designation..."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">PinCode</td>
+    <td><input type="text" id="pincode" name="pincode" placeholder="enter incode..."  required><br><small><font face="Times New Roman">Format: 123456</font></small></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Company Address</td>
+    <td><input type='text' name='address' size=20 rows="3" placeholder="enter address...">  </td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Company Email</td>
+    <td><input type='email' name='email' placeholder="enter email address..."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Gender</td>
+    <td><input type="radio" id="gender" name="gender" value="Male" required><font face="Times New Roman">Male</font> 
+<input type="radio" id="gender" name="gender" value="Female" required><font face="Times New Roman">Female</font></div></td>
+</tr>
+<tr>
+    <td align='center'><font face="Times New Roman">No.of Employees Working[Employee Range]</td>
+   <td><input type="number" id="lowerrange" name="lowerrange"placeholder="Minimum" min="500" max="1500" required><p><sup>to</sup></p><input type="number" id="upperrange"  placeholder="Maximum" name="upperrange" min="1500" max="3000" required></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+ <td align='center'><font face="Times New Roman">Date of Start of the Company</td>
+<td><input type="text" name="date" placeholder="dd/mm/yyyy"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+<tr>
+    <td align='center'><font face="Times New Roman">Phone Number</td>
+    <td><input type='text' name='phone' placeholder="enter phone number..."></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+
+<tr>
+
+
+
+
+
+
+
+
+
+
+<table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+<tr>
+    <td align='center'><input type='submit' name='REGISTER' value="REGISTER"></td>
+</tr>
+</table>
+</table>
+</form>
+</table>
+</font>
+</body>
+</html>

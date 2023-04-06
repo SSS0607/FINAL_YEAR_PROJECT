@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Update Company Details</title>
+<style type="text/css">
+  input {
+  width: 30%;
+  border-style:outset;
+}
+input[type=submit],
+      input[type=reset] {
+        background-color: #0041C2;
+		width:25%;
+        border-style: outset;
+		border-color:silver;
+        color: #fff;
+        padding: 7px 7px;
+        text-decoration: inherit;
+        margin: 2px 2px;
+        cursor: pointer;
+      }
+textarea {
+    border-style: outset;
+    border-width: 2px;
+}
+  th{
+  border-style:outset;
+  border-color:silver;
+  
+}
+ h3{
+  font-family: Calibri; 
+  font-size: 20pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:#fc5a8d;
+  text-align: center; 
+  text-decoration: italic
+}
+
+table{
+  font-family: Calibri; 
+  color:#8a0303; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  background-color:#FFE5B4; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px</style>
+<body>
+<div align="center">
+<h3><font face="Times New Roman">UPDATE YOUR COMPANY DETAILS</h3>
+</div>
+<form action="Updatejob.jsp" method="post">
+
+<table align="center" cellpadding = "10" style="width:50%">
+
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td><font face="Times New Roman">FIRST NAME</td>
+<td><input type="text" name="FirstName" maxlength="30"  border-style:outset; /required>
+<font face="Times New Roman">[max 30 characters a-z and A-Z]
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td><font face="Times New Roman">LAST NAME</td>
+<td><input type="text" name="LastName" maxlength="30"/required>
+<font face="Times New Roman">[max 30 characters a-z and A-Z]
+</td>
+</tr>
+ 
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td><font face="Times New Roman">EMAIL ID</td>
+<td><input type="text" name="EmailId" maxlength="100" /required></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td><font face="Times New Roman">COMPANY NAME</td>
+<td>
+<input type="text" name="CompanyName" maxlength="50" /required>
+<font face="Times New Roman">[max 30 characters a-z and A-Z]
+</td>
+</tr>
+<tr>
+<td><font face="Times New Roman">COMPANY URL<br />(optional)<br /><br /></td>
+<td><input type="text" name="ComapnyUrl" maxlength="50"  ></textarea></td>
+</tr>
+
+
+
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td><font face="Times New Roman">JOB TITLE</td>
+<td><input type="text" name="title" maxlength="30"/required>
+<font face="Times New Roman">[max 30 characters a-z and A-Z]
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td><font face="Times New Roman">LOCATION</td>
+<td><input type="text" name="Location" maxlength="30"/required>
+<font face="Times New Roman">[max 20 characters a-z and A-Z]
+</td>
+</tr>
+<tr>
+<td><font face="Times New Roman">JOB DESCRIPTION</td>
+<td><textarea name="jd" rows="4" cols="30" maxlength="500"/required></textarea>
+<font face="Times New Roman">[min 50 words a-z and A-Z]
+</td>
+</tr>
+<tr>
+<td><font face="Times New Roman">JOB VACANCIES</td>
+<td><input type="text" name="vacancies" maxlength="20" /required></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Update">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</table>
+
+
+</table>
+</form>
+</table>
+</body>
+</html>
